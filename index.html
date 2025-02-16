@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- SETUP BOOTSTAP: link to Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<!-- link to JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">	
+	
+
+	
+
+<body>
+	<div class="container mt-4"> 
+		<div class="row">
+
+			<div class="col-md-6">
+				<img class="rounded mt-4 md-4 mb-4 img-fluid" src="https://w7.pngwing.com/pngs/187/685/png-transparent-robot-robot-s-wikimedia-commons-digital-image-blog-thumbnail.png">
+			</div>
+
+
+			<div class="col-md-6">
+
+				<h4 class="text-start">Hi, my name is ALI. Let's test your Math skill.</h4>
+
+<br>
+<br>
+<br>	
+
+			<h4>Given:</h4>
+
+		
+		
+				<label> Enter a value for A: </label>
+<br>
+				<input type="number" id="A">
+
+<br>
+<br>
+
+				<label> Enter a value for B: </label>
+<br>
+				<input type="number" id="B">
+
+<br>
+<br>
+
+				<h5 id= "product"></h5>
+				<h5 id= "exponents"></h5>
+				<h5 id= "modulo"></h5>
+				<h5 id= "equal"></h5>
+
+			
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container2 mt-4"> 
+		<div class="row">
+
+			
+
+		<!--buttons-->
+		<div class="mt-4 md-4 mb-4 "></div>
+			<button type="button" class="btn btn-info" onclick="product()">product of a and b </button>
+		
+			<button type="button" class="btn btn-info" onclick="exponents()">a raise to b</button>
+		
+			<button type="button" class="btn btn-info" onclick="modulo()">get the remainder</button>
+		
+			<button type="button" class="btn btn-info" onclick="equal()">check if a is equal to b</button>
+
+		<!--buttons functions-->
+
+
+		<script type="text/javascript">
+
+				function product(){
+
+					var a = document.getElementById('A').value;
+					var	b = document.getElementById('B').value;
+
+				document.getElementById('product').innerHTML=' The product of A and B = '+ a * b + ''
+			}
+
+				function exponents(){
+
+					var a = document.getElementById('A').value;
+					var	b = document.getElementById('B').value;
+
+				document.getElementById('exponents').innerHTML=' A raise to B =  '+ a ** b + ''
+
+			}
+
+				function modulo() {
+					var a = document.getElementById('A').value;
+					var	b = document.getElementById('B').value;
+
+				document.getElementById('modulo').innerHTML='remaider = '+ a % b + ''
+
+			}
+
+				function equal() {
+					var a = document.getElementById('A').value;
+					var	b = document.getElementById('B').value;
+
+				document.getElementById('equal').innerHTML='is A equal to B'+ a == b + ''
+
+			}
+
+		</script>
+	</div>
+
+</body>
+
+</html>
